@@ -425,7 +425,7 @@ public class WheelView extends View {
         if (!TextUtils.isEmpty(label) && isCenterLabel) {
             //绘制文字，靠右并留出空隙
             int drawRightContentStart = measuredWidth - getTextWidth(paintCenterText, label);
-            Log.e("wheelview", "drawRightContentStart = " + drawRightContentStart);
+            //Log.e("wheelview", "drawRightContentStart = " + drawRightContentStart);
             canvas.drawText(label, drawRightContentStart - CENTERCONTENTOFFSET, centerY, paintCenterText);
         }
 
